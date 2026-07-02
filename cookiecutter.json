@@ -1,0 +1,7 @@
+{
+  "project_name": "my_genai_poc",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "author_name": "Kishan",
+  "description": "A short one-line description of the project",
+  "vector_store": ["chromadb", "faiss"]
+}

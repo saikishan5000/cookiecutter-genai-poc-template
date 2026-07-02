@@ -1,0 +1,19 @@
+environment: prod
+
+llm:
+  provider: huggingface
+  model_name: "google/flan-t5-large"
+  temperature: 0.2
+  max_tokens: 1024
+
+retrieval:
+  top_k: 5
+  chunk_size: 500
+  chunk_overlap: 50
+
+vector_store:
+  type: "{{ cookiecutter.vector_store }}"
+  persist_directory: "data/processed/vector_store"
+
+logging:
+  level: INFO

@@ -1,0 +1,19 @@
+environment: dev
+
+llm:
+  provider: huggingface
+  model_name: "google/flan-t5-base"
+  temperature: 0.3
+  max_tokens: 512
+
+retrieval:
+  top_k: 5
+  chunk_size: 500
+  chunk_overlap: 50
+
+vector_store:
+  type: "{{ cookiecutter.vector_store }}"
+  persist_directory: "data/processed/vector_store"
+
+logging:
+  level: DEBUG

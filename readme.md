@@ -51,6 +51,9 @@ streamlit run app/main.py
 That's it — from zero to a running Streamlit app with the full folder structure, in under a minute.
 
 ---
+## Optional: PowerShell shortcut
+Add to $PROFILE:
+function new-genai { cookiecutter https://github.com/saikishan5000/cookiecutter-genai-poc-template }
 
 ## What gets generated
 

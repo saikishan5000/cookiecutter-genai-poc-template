@@ -1,0 +1,13 @@
+langchain
+langchain-community
+{% if cookiecutter.vector_store == "faiss" %}
+faiss-cpu
+{% else %}
+chromadb
+{% endif %}
+transformers
+sentence-transformers
+huggingface_hub
+streamlit
+ruff
+pytest

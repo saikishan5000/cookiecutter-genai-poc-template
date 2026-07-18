@@ -3,5 +3,6 @@
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "author_name": "Kishan",
   "description": "A short one-line description of the project",
-  "vector_store": ["chromadb", "faiss"]
+  "vector_store": ["chromadb", "faiss"],
+  "environment_manager": ["venv", "conda"]
 }
